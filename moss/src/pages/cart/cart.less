@@ -1,0 +1,166 @@
+/**
+ * Page: 购物车
+ * Author: Moss
+ */
+
+page {
+  background: #fff;
+}
+.container {
+  height: auto;
+  padding: 110rpx 0;
+  .top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 675rpx;
+    padding: 0 25rpx;
+    background: #FFEDEA;
+    border-radius: 0 70rpx 70rpx 0;
+    line-height: 70rpx;
+    height: 70rpx;
+    .icon {
+      line-height: 66rpx;
+      text {
+        font-size: 28rpx;
+        color: #F9644B;
+      }
+    }
+    .text {
+      font-size: 26rpx;
+      color: #F9644B;
+      padding-left: 15rpx;
+    }
+    .close {
+      line-height: 62rpx;
+      text {
+        font-size: 22rpx;
+        color: #F9644B;
+      }
+    }
+  }
+  .list {
+    padding: 0 25rpx 0 70rpx;
+    .li {
+      margin-bottom: 40rpx;
+      border-radius: 10rpx;
+      box-shadow: 0 3px 5px rgba(0,0,0,.3);
+      padding: 25rpx;
+      position: relative;
+      .check {
+        position: absolute;
+        left: -53rpx;
+        top: 50%;
+        margin-top: -20rpx;
+        width: 40rpx;
+        height: 40rpx;
+        line-height: 40rpx;
+        text {
+          font-size: 40rpx;
+          color: #bbb;
+          &.icon-dagou {
+            color: #F9644B;
+          }
+        }
+      }
+      .img {
+        image {
+          width: 188rpx;
+          height: 188rpx;
+          border-radius: 5rpx;
+          display: block;
+        }
+      }
+      .right {
+        width: 395rpx;
+        .title {
+          font-size: 24rpx;
+          color: #222;
+          line-height: 36rpx;
+          height: 72rpx;
+        }
+        .price {
+          font-size: 32rpx;
+          color: #F9644B;
+          line-height: 40rpx;
+        }
+        .num_w {
+          border: 1px solid #eee;
+          border-radius: 5px;
+          width: 190rpx;
+          margin: 10rpx 0;
+          view {
+            height: 50rpx;
+            line-height: 46rpx;
+            text-align: center;
+            width: 50rpx;
+            font-size: 40rpx;
+            color: #999;
+            box-sizing: border-box;
+          }
+          .num {
+            width: 90rpx;
+            border-left: 1px solid #eee;
+            border-right: 1px solid #eee;
+            font-size: 26rpx;
+            color: #888;
+            line-height: 52rpx;
+          }
+          input {
+            width: 90rpx;
+            height: 50rpx;
+            line-height: 52rpx;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  .bottom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 710rpx;
+    padding: 25rpx 25rpx 25rpx 15rpx;
+    line-height: 60rpx;
+    background: #fbfbfb;
+    .check {
+      text {
+        float: left;
+        font-size: 30rpx;
+        color: #222;
+        &.text {
+          padding-left: 15rpx;
+        }
+        &.iconfont {
+          font-size: 40rpx;
+          color: #999;
+        }
+        &.icon-dagou {
+          color: #F9644B;
+        }
+      }
+    }
+    .button {
+      button {
+        height: 60rpx;
+        line-height: 60rpx;
+        padding: 0;
+        width: 180rpx;
+        border-radius: 60rpx;
+        font-size: 24rpx;
+        color: #fff;
+        box-shadow:0 8rpx 10rpx rgba(255,37,0,.2);
+      }
+    }
+    .price {
+      padding-right: 25rpx;
+      font-size: 30rpx;
+      color: #222;
+      text {
+        color: #F9644B;
+      }
+    }
+  }
+}

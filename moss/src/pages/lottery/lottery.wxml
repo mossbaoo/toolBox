@@ -1,0 +1,25 @@
+<!-- 
+  Page: 幸运大转盘
+  Author: Moss
+ -->
+
+<view class="container">
+  <view class="box">
+    <view class="pointer"><image animation="{{animationData}}" src="/images/pointer.png"></image></view>
+    <view class="list clearfix">
+      <block wx:for="{{prizeArr}}" wx:for-index="index" wx:for-item="item" wx:if="{{index<2}}">
+        <view class="li">{{item}}</view>
+      </block>
+      <!-- <view class="li">IphoneX</view>
+      <view class="li">50积分</view>
+      <view class="li">50金币</view>
+      <view class="li">20金币</view>
+      <view class="li">10元话费</view>
+      <view class="li">谢谢参与</view>
+      <view class="li">100金币</view>
+      <view class="li">100积分</view> -->
+    </view>
+  </view>
+  <button bindtap="start" disabled="{{disabled}}">开始</button>
+  <view class="prize">{{prizeName}}</view>
+</view>

@@ -1,0 +1,53 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.1",
+	"appid": "wxb3e2fe14312c345b",
+	"projectname": "Moss",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "werewolf",
+					"pathName": "pages/grouping/werewolf",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "result",
+					"pathName": "pages/grouping/werewolf_result",
+					"query": "id=1",
+					"scene": "1048"
+				}
+			]
+		}
+	}
+}

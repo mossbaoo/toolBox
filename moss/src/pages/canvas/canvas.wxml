@@ -1,0 +1,7 @@
+
+<view class="container">
+  <!--pages/canvas/canvas.wxml-->
+<canvas class="canvas" id="canvas" canvas-id="canvas" disable-scroll="true" bindtouchstart="canvasStart" bindtouchmove="canvasMove" bindtouchend="canvasEnd" touchcancel="canvasEnd" binderror="canvasIdErrorCallback" style="width: {{canvasWidth}}px; height: {{canvasHeight}}px;"></canvas>
+<button type="default" bindtap="cleardraw">清除画布</button>
+<button type="default" bindtap="getimg">导出图片</button>
+</view>

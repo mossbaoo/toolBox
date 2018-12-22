@@ -1,0 +1,28 @@
+
+<view class="container">
+  <view class="title">神职配置</view>
+  <view class="list clearfix">
+    <block wx:for="{{godArr}}" wx:for-item="item" wx:key="index">
+      <view class="li {{item.status ? 'on':''}}" bindtap="choose" data-id="{{item.id}}">{{item.name}}</view>
+    </block>
+  </view>
+  <view class="title">平民配置</view>
+  <view class="content clearfix">
+    <view class="fl left">数量</view>
+    <view class="fr right">
+      <view class="fl {{peopleNum>0 ? 'on':''}}" bindtap="subtract" data-type="1">-</view>
+      <view class="fl num">{{peopleNum}}</view>
+      <view class="fl on" bindtap="add" data-type="1">+</view>
+    </view>
+  </view>
+  <view class="title">狼人配置</view>
+  <view class="content clearfix">
+    <view class="fl left">数量</view>
+    <view class="fr right">
+      <view class="fl {{wolfNum>0 ? 'on':''}}" bindtap="subtract" data-type="2">-</view>
+      <view class="fl num">{{wolfNum}}</view>
+      <view class="fl on" bindtap="add" data-type="2">+</view>
+    </view>
+  </view>
+  <view class="button" bindtap="submit">完成配置</view>
+</view>

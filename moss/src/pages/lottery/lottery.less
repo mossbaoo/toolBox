@@ -1,0 +1,40 @@
+/**
+ * Page: 幸运大转盘
+ * Author: Moss
+ */
+
+page {
+  background: #fff;
+}
+.container {
+  padding: 100rpx;
+  .box {
+    position: relative;
+    .pointer {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -200rpx;
+      margin-left: -200rpx;
+      image {
+        display: block;
+        width: 400rpx;
+        height: 400rpx;
+      }
+    }
+    .list {
+      .li {
+        float: left;
+        width: 33.3333%;
+        height: 183.3333rpx;
+        line-height: 183.3333rpx;
+        text-align: center;
+        box-sizing: border-box;
+        border: 1px solid #eee;
+        &:nth-child(5) {
+          margin-left: 33.3333%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.container {
+    .title {
+        font-size: 30rpx;
+        color: #666;
+        padding: 0 30rpx;
+        line-height: 80rpx;
+        padding-top: 20rpx;
+    }
+    .list {
+        background: #fff;
+        padding: 20rpx 30rpx;
+        .li {
+            float: left;
+            width: 23%;
+            margin-right: 2.6666%;
+            text-align: center;
+            font-size: 26rpx;
+            color: #333;
+            border-radius: 50px;
+            border: 1px solid #bbb;
+            line-height: 60rpx;
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
+            &.on {
+                color: #20ac19;
+                border: 1px solid #20ac19;
+                background: #edfbeb;
+            }
+        }
+    }
+    .content {
+        background: #fff;
+        padding: 20rpx 30rpx;
+        .left {
+            font-size: 28rpx;
+            color: #333;
+            line-height: 62rpx;
+        }
+        .right {
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            view {
+                height: 60rpx;
+                line-height: 56rpx;
+                text-align: center;
+                width: 60rpx;
+                font-size: 40rpx;
+                color: #666;
+            }
+            .on {
+                color: #20ac19;
+            }
+            .num {
+                width: 100rpx;
+                border-left: 1px solid #bbb;
+                border-right: 1px solid #bbb;
+                font-size: 26rpx;
+                color: #333;
+                line-height: 62rpx;
+            }
+        }
+    }
+    .button {
+        width: 690rpx;
+        line-height: 88rpx;
+        margin: 100rpx 30rpx 0;
+        text-align: center;
+        background: #20ac19;
+        border-radius: 5px;
+        font-size: 30rpx;
+        color: #fff;
+    }
+}

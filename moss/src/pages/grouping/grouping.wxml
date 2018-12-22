@@ -1,0 +1,17 @@
+
+<view class="container">
+  <view class="list">
+    <view class="li">
+      <navigator url="/pages/grouping/werewolf/deploy" hover-class="none">
+        <image src="/images/grouping_0.jpg" mode="widthFix"></image>
+        <view class="title">狼人杀</view>
+      </navigator>
+    </view>
+    <view class="li">
+      <navigator url="/pages/grouping/custom/custom" hover-class="none">
+        <image src="/images/grouping_1.jpg" mode="widthFix"></image>
+        <view class="title">自定义</view>
+      </navigator>
+    </view>
+  </view>
+</view>

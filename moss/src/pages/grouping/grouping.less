@@ -1,0 +1,30 @@
+.container {
+	.list {
+		padding: 30rpx;
+    display: flex;
+		.li {
+			flex: 0 0 155rpx;
+      margin: 10rpx;
+			text-align: center;
+			&:nth-child(4n) {
+				margin-right: 0;
+			}
+			navigator {
+				padding-top: 15rpx;
+				border-radius: 10px;
+				image {
+					width: 88rpx;
+					height: 88rpx;
+					display: block;
+					margin: 0 auto;
+					border-radius: 10px;
+				}
+				.title {
+					font-size: 28rpx;
+					color: #333;
+					line-height: 50rpx;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/grouping/grouping",
+    "pages/grouping/custom/custom",
+    "pages/grouping/werewolf/deploy",
+    "pages/grouping/werewolf/result",
+    "pages/lottery/lottery",
+    "pages/canvas/canvas"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

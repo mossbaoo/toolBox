@@ -1,0 +1,17 @@
+
+<view class="container">
+  <view class="list">
+    <view class="li">
+      <navigator url="/pages/grouping/grouping" hover-class="none">
+        <view class="icon"><text class="iconfont icon-zudui"></text></view>
+        <view class="title">组队</view>
+      </navigator>
+    </view>
+    <view class="li">
+      <navigator url="/pages/lottery/lottery" hover-class="none">
+        <view class="icon"><text class="iconfont icon-choujiang"></text></view>
+        <view class="title">抽奖</view>
+      </navigator>
+    </view>
+  </view>
+</view>

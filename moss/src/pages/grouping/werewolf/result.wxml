@@ -1,0 +1,48 @@
+
+<view class="container">
+  <view class="list clearfix">
+    <block wx:for="{{arrData}}" wx:for-item="item" wx:key="index">
+      <view class="li {{item.status? '':'disabled'}}" data-index="{{index}}" data-id="{{item.id}}" data-name="{{item.name}}" bindtap="sitDown">
+        <view class="iconfont icon-shafa"></view>
+        <view class="num">{{item.id}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="card" wx-if="{{cardMask}}">
+    <image mode="widthFix" src="/images/card_0.jpg" wx-if="{{cardType==0}}"></image>
+    <image mode="widthFix" src="/images/card_1.jpg" wx-if="{{cardType==1}}"></image>
+    <image mode="widthFix" src="/images/card_2.jpg" wx-if="{{cardType==2}}"></image>
+    <image mode="widthFix" src="/images/card_3.jpg" wx-if="{{cardType==3}}"></image>
+    <image mode="widthFix" src="/images/card_4.jpg" wx-if="{{cardType==4}}"></image>
+    <image mode="widthFix" src="/images/card_5.jpg" wx-if="{{cardType==5}}"></image>
+    <view class="button" bindtap="card" wx-if="{{cardType==0}}">打开卡片</view>
+    <view class="button" bindtap="card" wx-if="{{cardType>0}}">关闭卡片</view>
+  </view>
+  <view class="start" wx-if="{{start}}">
+    <view class="title">游戏已经开始</view>
+    <view class="button" bindtap="openJudge">法官请查看玩家身份</view>
+  </view>
+  <view class="judge" hidden="{{!isJudge}}">
+    <view class="judge_c">
+      <view class="top clearfix">
+        <view>玩家</view>
+        <view>身份</view>
+        <view>备注</view>
+        <view>存活</view>
+      </view>
+      <view class="ul">
+        <block wx:for="{{arrData}}" wx:for-item="item" wx:key="index">
+          <view class="li clearfix">
+            <view>{{item.id}}号</view>
+            <view>{{item.name}}</view>
+            <view><input type="text" /></view>
+            <view><checkbox checked="checked"/></view>
+          </view>
+        </block>
+      </view>
+      <view class="close">
+        <view bindtap="closeJudge">关闭</view>
+      </view>
+    </view>
+  </view>
+</view>
