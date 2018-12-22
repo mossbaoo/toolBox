@@ -5,7 +5,11 @@ git commit -m "first commit"
 git remote add origin https://github.com/mossbaoo/toolBox.git
 git push -u origin master
 
-edit or add files
+edit files
+git commit -m "***"
+git push -u origin master
+
+add files
 git add -A
 git commit -m "***"
 git push -u origin master
